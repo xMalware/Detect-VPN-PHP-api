@@ -46,6 +46,8 @@
 		'Country ISO: '.$data['countryIso'].'<br />'.
 		'Continent name: '.$data['continentName'].'<br />'.
 		'Continent code: '.$data['continentCode'].'<br />'.
+		'Postal code: '.$data['postalCode'].'<br />'.
+		'City name: '.$data['cityName'].'<br />'.
 		'Response time: '.$data['responseTime'].' ms<br />'.
 		'ASN id: '.$data['asnId'].'<br />'.
 		'ASN name: '.$data['asnName'].'<br />'.
