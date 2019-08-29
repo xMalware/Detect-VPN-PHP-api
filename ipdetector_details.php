@@ -3,7 +3,7 @@
 	/*
 		This PHP file is used to get data about an IP address by using the IPDetector API
 		You can use the free offer (30 requests per minute) or the paid offer.
-		Create your API key at https://ipdetector.info
+		Create your API key at https://ipwarner.com
 	*/
 	
 	function getIpData($apiKey, $ip)
@@ -11,7 +11,7 @@
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_URL, 'https://api.ipdetector.info/'.$ip);
+		curl_setopt($ch, CURLOPT_URL, 'https://api.ipwarner.com/'.$ip);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('API-Key: '.$apiKey));
 		$result = curl_exec($ch);
 		curl_close($ch);
